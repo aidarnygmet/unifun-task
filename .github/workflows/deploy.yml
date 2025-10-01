@@ -17,9 +17,7 @@ jobs:
           cache: 'gradle'
 
       - name: Build with Gradle
-        run: |
-          cd java-agi
-          ./gradlew clean build
+        run: ./java-agi/gradlew -p java-agi clean build
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
