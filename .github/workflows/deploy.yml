@@ -45,7 +45,7 @@ jobs:
           username: ${{ secrets.DEPLOY_USERNAME }}
           password: ${{ secrets.DEPLOY_PASSWORD }}
           script: |
-            cd /home/progr/ivr
+            cd /home/progr/ivr/unifun-task
             git pull origin main
             sudo docker-compose pull asterisk-agi
             sudo docker-compose up -d --remove-orphans
