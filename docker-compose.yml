@@ -14,6 +14,6 @@ services:
       - asterisk-agi
 
   asterisk-agi:
-    build: ./java-agi
-    container_name: asterisk-agi
-    restart: unless-stopped
+      image: aidarinho2000/asterisk-agi:latest
+      container_name: asterisk-agi
+      restart: unless-stopped
