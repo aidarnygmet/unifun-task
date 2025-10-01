@@ -1,0 +1,21 @@
+# Gradle
+.gradle
+/build/
+!/java-agi/build/libs/*.jar
+/java-agi/build
+out/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
