@@ -12,7 +12,7 @@ public class IvrScript extends BaseAgiScript {
         final String RECORDING_PATH = "/tmp/user_message";
         try {
             channel.answer();
-            String digitString = channel.getData("custom/ivr-main-menu", 10000, 2);
+            String digitString = channel.getData("custom/ivr-main-menu", 10000, 1);
             System.out.println("Received: "+digitString);
             if (digitString != null && !digitString.isEmpty()) {
                 char digit = digitString.charAt(0);
